@@ -97,4 +97,4 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the IP addresses of the VM's you wish to monitor.
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
-
+![](images/hosts%20.png)
