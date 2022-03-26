@@ -7,9 +7,11 @@ The files in this repository were used to configure the network depicted below.
 
 ![](diagrams/Maya%20Red%20Team%20Virtual%20Network.drawio.png)
 
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   - filebeat-playbook.yml
+  ![](images/filebeat-playbook.png)
 
 This document contains the following details:
 - Description of the Topology
@@ -19,7 +21,7 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
-
+<br>
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -48,7 +50,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Red-Team Jump-Box machine can accept connections from the Internet. Access to this machine is only allowed by designated IP addresses. 
 - 
-
+<br>
 Machines within the network can only be accessed by Red-Team Jump-Box 20.25.56.130
 
 
@@ -75,7 +77,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![](images/sudo%20docker%20ps%20elk.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: 
@@ -94,4 +96,10 @@ SSH into the control node and follow the steps below:
 - Copy the Filebeat-playbook.yml file to ELK Virtual Machine.
 - Update the hosts file to include the IP addresses of the VM's you wish to monitor.
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
+<br>
+<br>
+![](images/filebeat-playbook.png)
+![](images/hosts%20.png)
+
+
 
