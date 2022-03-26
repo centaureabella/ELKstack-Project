@@ -96,9 +96,5 @@ SSH into the control node and follow the steps below:
 - Copy the Filebeat-playbook.yml file to ELK Virtual Machine.
 - Update the hosts file to include the IP addresses of the VM's you wish to monitor.
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
-<br>
-![](images/filebeat-playbook.png)
-<br>
-![](images/hosts%20.png)
-<br>
+
 
